@@ -124,6 +124,7 @@
     "*-fired-*": {
       "liquidContainerProps": {
         "capacityLitres": 0.2,
+        "drinkPortionSize": 0.2, 
         "allowHeldLiquidTransfer": true,
         "allowHeating": true,
         "maxTemperature": 100,
