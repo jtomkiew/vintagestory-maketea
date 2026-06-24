@@ -63,10 +63,10 @@ public class BlockLiquidContainerBasePatch
         if (stabilityBehavior == null) return;
 
         var stabilityGainTotal = stabilityGain * consumedSize * (1f - spoilState) / containableProps.ItemsPerLitre;
-        api.Logger.Debug(
-            "MakeTeaMod: entity [{0}] with stability {1:F3}, gain +{2:F3} stability using [{3}] liquid ({4:P1} spoiled) from container [{5}]",
-            byEntity.GetName(), stabilityBehavior.OwnStability, stabilityGainTotal, __state.ContentStack.GetName(),
-            spoilState, slot.Itemstack.GetName());
+        // api.Logger.Debug(
+        //     "MakeTeaMod: entity [{0}] with stability {1:F3}, gain +{2:F3} stability using [{3}] liquid ({4:P1} spoiled) from container [{5}]",
+        //     byEntity.GetName(), stabilityBehavior.OwnStability, stabilityGainTotal, __state.ContentStack.GetName(),
+        //     spoilState, slot.Itemstack.GetName());
 
         stabilityBehavior.OwnStability += stabilityGainTotal;
     }
